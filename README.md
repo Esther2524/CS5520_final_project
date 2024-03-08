@@ -4,6 +4,7 @@
 ### 1. FocusList 
 This tab is the **central hub** for the user's focuses. It lists all the pomodoros (focuses) the user has added, providing an overview of their study plan. It is initially empty. When a user selects **a focus task** (represented by a card), it initiates a **focused study period** with a **countdown timer**, reflecting the user's commitment to study for a specified duration without distractions.
   * **(1) AddFocus**: It is implemented as a modal, allowing users to create new focus tasks without navigating away from their current screen FocusList. (Note: Modals are a popular UI pattern used to display content in a temporary window that overlays the main content of the app.)
+  * 点击左边 -》 修改focus
   * **(2) Standby**: A personalized screen activated when a user selects a focus task from the FocusList. This screen is more than just a timer; it's a custom space designed to enhance the user's focus and motivation during a study session. The Standby screen includes:
     * **Countdown Timer**: The core feature, tracking the remaining time the user has committed to focus on a specific task.
     * **Start/Stop Functionality**: Allow users to start, pause, or stop the countdown at their discretion.
