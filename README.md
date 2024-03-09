@@ -2,9 +2,12 @@
 
 ## Focus tasks & Standby
 ### 1. FocusList 
-This tab is the **central hub** for the user's focuses. It lists all the pomodoros (focuses) the user has added, providing an overview of their study plan. It is initially empty. When a user selects **a focus task** (represented by a card), it initiates a **focused study period** with a **countdown timer**, reflecting the user's commitment to study for a specified duration without distractions.
-  * **(1) AddFocus**: It is implemented as a modal, allowing users to create new focus tasks without navigating away from their current screen FocusList. (Note: Modals are a popular UI pattern used to display content in a temporary window that overlays the main content of the app.)
-  * 点击左边 -》 修改focus
+This tab is the **central hub** for the user's focuses. It lists all the pomodoros (focuses) the user has added, providing an overview of their study plan. It is initially empty. When a user selects **a focus task** (represented by a card), it initiates a **focused study period** with a **countdown timer**, reflecting the user's commitment to study for a specified duration without distractions. 
+
+There are two buttons within the FocusList tab: *Add a new Focus* and *Daily Focus Reminder*. The `Start` button on each focus task card allows users to quickly dive into a study session (standby). The rest of the focus task card (especially the left or middle part) is interactive for editing or deletion, using a modal for editing or deleting tasks upon tapping the card.
+
+  * **(1) Add a New Focus**: It is implemented as a modal, allowing users to create new focus tasks without navigating away from their current screen FocusList. (Note: Modals are a popular UI pattern used to display content in a temporary window that overlays the main content of the app.)
+  * **(3) Daily Focus Reminder**: Based on the user's preferred reminder time, the app schedules a **push notification** if the user has not engaged in any focus sessions by their specified reminder time today. This ensures that the reminder is timely and relevant. Regular reminders encourage users to maintain a consistent study routine, which is crucial for building effective study habits.  By reminding users to return to the app, daily focus reminders can increase overall engagement and usage of the app.
   * **(2) Standby**: A personalized screen activated when a user selects a focus task from the FocusList. This screen is more than just a timer; it's a custom space designed to enhance the user's focus and motivation during a study session. The Standby screen includes:
     * **Countdown Timer**: The core feature, tracking the remaining time the user has committed to focus on a specific task.
     * **Start/Stop Functionality**: Allow users to start, pause, or stop the countdown at their discretion.
